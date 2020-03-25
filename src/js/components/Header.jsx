@@ -61,7 +61,7 @@ const Header = () =>
                         <Button onClick={() => openLink('/cmd/', '_self')}><span styleName='buttonText'>💻 Command Line</span></Button>
 
                     </div>
-                    <Avatar square styleName='headerAvatar' src="https://mustafacanpalaz.com/me.png" />
+                    <Avatar square styleName='headerAvatar' src="/me.png" />
                 </Toolbar>
             </AppBar>
         </ThemeProvider>
