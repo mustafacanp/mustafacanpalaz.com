@@ -1,0 +1,52 @@
+.headerBar {
+    margin-bottom: 5rem;
+    z-index: 100;
+}
+
+.toolBar {
+    display: grid;
+    position: relative;
+}
+
+.headerButtonGroup {
+    display: flex;
+}
+
+.startButton {
+    font-weight: 900;
+    font-family: 'VT323', monospace;
+}
+
+.startButton > div {
+    display: flex;
+    align-items: center;
+}
+
+.buttonText {
+    font-family: 'VT323', monospace;
+    margin: 0 1.8rem;
+}
+
+.verticalLine {
+    margin: 0 .5rem !important;
+}
+
+.winLogo {
+    margin-right: 5px;
+    width: 20px;
+}
+
+.headerAvatar {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 720px){
+    .headerButtonGroup {
+        flex-direction: row;
+    }
+    .buttonText {
+        flex: 0 0 20vw;
+        margin: 0;
+    }
+}
