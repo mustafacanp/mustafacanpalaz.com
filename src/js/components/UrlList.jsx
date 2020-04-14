@@ -9,7 +9,7 @@ import {
     Fieldset,
 } from 'react95'
 import { ThemeProvider } from 'styled-components'
-import { scrollNext, openLink } from './Window.jsx'
+import { scrollNext, openLink } from './Bio.jsx'
 import styles from '../../css/Window.css'
 
 const items = [
@@ -62,7 +62,7 @@ const UrlList = () => (
                 </WindowContent>
                 <div styleName='buttonGroup'>
                     <Button onClick={() => scrollNext('project', -150)}><span>Back ⇑</span></Button>
-                    <Button onClick={() => scrollNext('intro', -150)}><span>Top ⇑⇑</span></Button>
+                    <Button onClick={() => scrollNext('bio', -150)}><span>Top ⇑⇑</span></Button>
                 </div>
             </Window>
         </ThemeProvider>

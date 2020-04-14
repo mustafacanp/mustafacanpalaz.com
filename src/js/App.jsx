@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Header from './components/Header.jsx'
-import Intro from './components/Window.jsx'
-import Experience from './components/WindowWithTab.jsx'
+import Bio from './components/Bio.jsx'
+import Experience from './components/Experience.jsx'
 import Project from './components/Project.jsx'
 import UrlList from './components/UrlList.jsx'
 import { Element } from 'react-scroll'
@@ -14,8 +14,8 @@ const App = () => (
 
         <div styleName='mainContainer'>
             <div styleName='windowContainer'>
-                <Element name='intro'>
-                    <Intro />
+                <Element name='bio'>
+                    <Bio />
                 </Element>
             </div>
 

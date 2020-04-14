@@ -11,7 +11,7 @@ import {
     Avatar
 } from 'react95'
 import styles from '../../css/HeadBar.css'
-import { openLink, scrollNext } from './Window.jsx'
+import { openLink, scrollNext } from './Bio.jsx'
 
 function Menu() {
     const [open, setOpen] = React.useState(false)
@@ -28,7 +28,7 @@ function Menu() {
         <div>
             {open && (
                 <List horizontalAlign="left" verticalAlign="bottom" open={open} onClick={handleClose}>
-                    <ListItem onClick={() => scrollNext('intro', -150)}>👨‍💻 Profile</ListItem>
+                    <ListItem onClick={() => scrollNext('bio', -150)}>👨‍💻 Profile</ListItem>
                     <ListItem onClick={() => scrollNext('skills', -150)}>⚔️ Skills</ListItem>
                     <ListItem onClick={() => scrollNext('experience', -150)}>💼 Experience</ListItem>
                     <ListItem onClick={() => scrollNext('project', -150)}>⌨️ Projects</ListItem>

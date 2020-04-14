@@ -12,7 +12,7 @@ import {
     Button,
 } from 'react95'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { scrollNext } from './Window.jsx'
+import { scrollNext } from './Bio.jsx'
 import styles from '../../css/Window.css'
 
 const ResetStyles = createGlobalStyle`
@@ -97,16 +97,13 @@ class Experience extends React.Component {
                                             Jan 2019 -– Present
                                             <ul styleName='listText'>
                                                 <li styleName='itemText'>
-                                                    Create development, staging, production environments using docker.
-                                                </li>
-                                                <li styleName='itemText'>
-                                                    Build CI / CD pipelines with TravisCI.
-                                                </li>
-                                                <li styleName='itemText'>
-                                                    Write E2E tests with Cypress and API tests with Postman.
+                                                    Implement frontend features using React.js and Material UI.
                                                 </li>
                                                 <li styleName='itemText'>
                                                     Implement frontend features using Vue.js and Element UI.
+                                                </li>
+                                                <li styleName='itemText'>
+                                                    Write E2E tests with Cypress and API tests with Postman.
                                                 </li>
                                                 <li styleName='itemText'>
                                                     Implement Authentication System using JWT and Redis.
@@ -155,10 +152,10 @@ class Experience extends React.Component {
                                             Sep 2016 -– Dec 2017
                                             <ul styleName='listText'>
                                                 <li styleName='itemText'>
-                                                    Work on a tourism agencies CRM with PHP(Laravel) and Jquery.
+                                                    Developed a CRM (for Tourism Agencies) with PHP(Laravel) and Jquery.
                                                 </li>
                                                 <li styleName='itemText'>
-                                                    Develop app integration with REST / SOAP and other APIs for Google Maps, social media logins, payment processors, and other services.
+                                                    Developed app integration with REST / SOAP and other APIs for Google Maps, social media logins, API entegrations, payment processors, and other services.
                                                 </li>
                                                 <li styleName='itemText'>
                                                     Technology: PHP(Laravel), JavaScript ES6, Linux

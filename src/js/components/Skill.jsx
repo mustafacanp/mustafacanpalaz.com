@@ -12,7 +12,7 @@ import {
     themes, Button,
 } from 'react95'
 import { ThemeProvider } from 'styled-components'
-import { scrollNext } from './Window.jsx'
+import { scrollNext } from './Bio.jsx'
 import styles from '../../css/Window.css'
 
 const fullStar =
@@ -76,7 +76,7 @@ const Skill = () => (
                     </Table>
                 </WindowContent>
                 <div styleName='buttonGroup'>
-                    <Button onClick={() => scrollNext('intro', -150)}><span>Back ⇑</span></Button>
+                    <Button onClick={() => scrollNext('bio', -150)}><span>Back ⇑</span></Button>
                     <Button onClick={() => scrollNext('experience', -150)}><span>Next ⇓</span></Button>
                 </div>
             </Window>

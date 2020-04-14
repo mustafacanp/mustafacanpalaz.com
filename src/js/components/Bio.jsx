@@ -32,7 +32,7 @@ export const openLink = (url, name = '_blank') => {
     );
 }
 
-const Intro = () => (
+const Bio = () => (
     <div stylename='styles.windowDivLayer}'>
         <ResetStyles />
         <ThemeProvider theme={themes.water}>
@@ -76,4 +76,4 @@ const Intro = () => (
     </div>
 )
 
-export default Intro
+export default Bio
