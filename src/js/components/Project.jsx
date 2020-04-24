@@ -15,7 +15,7 @@ import {
     List,
 } from 'react95'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { openLink, scrollNext } from './Bio.jsx'
+import { scrollNext } from './Bio.jsx'
 import styles from '../../css/Window.css'
 
 const ResetStyles = createGlobalStyle`
