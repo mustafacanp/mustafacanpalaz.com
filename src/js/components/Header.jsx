@@ -58,7 +58,7 @@ const Header = () =>
                         <Button onClick={() => scrollNext('experience', -150)}><span styleName='buttonText'>Experience</span></Button>
                         <Button onClick={() => scrollNext('project', -150)}><span styleName='buttonText'>Projects</span></Button>
                         <Button onClick={() => openLink('mailto:mustafacanpalaz@gmail.com?Subject=Hello')}><span styleName='buttonText'>Contact</span></Button>
-                        <Button onClick={() => openLink('/cmd/', '_self')}><span styleName='buttonText'>💻 Command Line</span></Button>
+                        <Button onClick={() => openLink('/cmd/', '_self')}><span className={`${styles.buttonText} ${styles.commandLineButton}`}><span  styleName='commandLineIcon'>💻</span> Command Line</span></Button>
 
                     </div>
                     <Avatar onClick={() => openLink('https://mustafacanpalaz.com/me.png')} square styleName='headerAvatar' src="/me.png" />
