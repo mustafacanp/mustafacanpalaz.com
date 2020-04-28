@@ -40,15 +40,11 @@ const Bio = () => (
                 <WindowHeader styleName='styles.windowHeader'>😎 Hello.exe</WindowHeader>
                 <WindowContent>
                     <Fieldset>
-                        {/* Hi, I'm <span styleName='styles.nameInline'>Mustafa Can Palaz.</span> */}
-                        I am a passionate developer who want to be a part of the creation of the future.
-                        I've never limit myself by the things that I have to do. I always try to learn new technologies.
-                        <br />
-                        <br />
-                        I often look at the problems in my life like an algorithm. That makes it easy to solve problems and makes my life easier.
-                        <br />
-                        <br />
-                        Hence, I can literally define myself as Full Stack Software Developer.
+                        Hi, I'm <span styleName='styles.nameInline'>Mustafa Can Palaz.</span>
+                        <br /><br />
+                        I am a passionate developer who wants to be a part of the creation of the future. I never allow myself to be limited by the things I need to do and I am always trying to learn new technologies.
+                        <br /><br />
+                        I often look at the problems in my life like an algorithm. I enjoy solving these problems and making my life easier, hence I can literally define myself as a Full Stack Software Developer.
                     </Fieldset>
                     <br />
                     <Fieldset label="Education">
