@@ -1,7 +1,9 @@
 # mustafacanpalaz.com
 
-To install dependencies - `npm install`  
+Install dependencies `yarn install`
 
-To start the application - `npm run start`
+Start application `yarn start`
 
-[Link](https://mustafacanpalaz.com)
+Build application `yarn build`
+
+[Demo](https://mustafacanpalaz.com)

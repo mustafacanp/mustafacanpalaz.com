@@ -1,75 +1,87 @@
 .headerBar {
-    margin-bottom: 5rem;
-    z-index: 100;
+  margin-bottom: 5rem;
+  z-index: 100;
 }
 
 .toolBar {
-    display: grid;
-    position: relative;
+  display: grid;
+  position: relative;
 }
 
 .headerButtonGroup {
-    display: flex;
+  display: flex;
 }
 
 .startButton {
-    font-weight: 900;
-    font-family: 'VT323', monospace;
+  font-weight: 900;
+  font-family: "VT323", monospace;
 }
 
 .startButton > div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .buttonText {
-    font-family: 'VT323', monospace;
-    margin: 0 1.8rem;
+  font-family: "VT323", monospace;
+  margin: 0 1.8rem;
 }
 
 .commandLineButton {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .buttonText .commandLineIcon {
-    display: inline-block;
-    transition: all 200ms ease-in-out;
+  display: inline-block;
+  transition: all 200ms ease-in-out;
 }
 .buttonText:hover .commandLineIcon {
-    transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
 }
 
 .verticalLine {
-    margin: 0 .5rem !important;
+  margin: 0 0.5rem !important;
 }
 
 .winLogo {
-    margin-right: 5px;
-    width: 20px;
+  margin-right: 5px;
+  width: 20px;
 }
 
 .headerAvatar {
-    margin-left: auto;
-    margin-right: 5px;
-    cursor: pointer;
-    animation: wiggle 2000ms infinite;
-    animation-timing-function: linear;
+  margin-left: auto;
+  margin-right: 5px;
+  cursor: pointer;
+  animation: wiggle 2000ms infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes wiggle {
-  0% { transform: translate(1px, 0); -ms-transform: translate(1px, 0); -webkit-transform: translate(1px, 0); }
-  10% { transform: translate(-1px, 0); -ms-transform: translate(-1px, 0); -webkit-transform: translate(-1px, 0); }
-  20% { transform: translate(1px, 0); -ms-transform: translate(1px, 0); -webkit-transform: translate(1px, 0); }
+  0% {
+    transform: translate(1px, 0);
+    -ms-transform: translate(1px, 0);
+    -webkit-transform: translate(1px, 0);
+  }
+  10% {
+    transform: translate(-1px, 0);
+    -ms-transform: translate(-1px, 0);
+    -webkit-transform: translate(-1px, 0);
+  }
+  20% {
+    transform: translate(1px, 0);
+    -ms-transform: translate(1px, 0);
+    -webkit-transform: translate(1px, 0);
+  }
 }
 
-@media screen and (max-width: 720px){
-    .headerButtonGroup {
-        flex-direction: row;
-    }
-    .buttonText {
-        flex: 0 0 20vw;
-        margin: 0;
-    }
+@media screen and (max-width: 720px) {
+  .headerButtonGroup {
+    flex-direction: row;
+  }
+  .buttonText {
+    flex: 0 0 20vw;
+    margin: 0;
+  }
 }
