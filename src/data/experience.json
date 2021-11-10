@@ -13,20 +13,6 @@
     ]
   },
   {
-    "name": "Archi's Academy",
-    "shortName": " Archi's",
-    "title": "Software Trainer & Lead Software Engineer",
-    "startDate": "Feb 2020",
-    "endDate": "Present",
-    "techStack": "Solidity, Web3, React, Node, Docker",
-    "responsibilities": [
-      "Giving Frontend & Blockchain online training on the https://www.archisacademy.com.",
-      "Develop and deploy blockchain features to web apps.",
-      "Responsible for people management.",
-      "Guidance in architectural design and system infrastructure."
-    ]
-  },
-  {
     "name": "Destek Engineering",
     "shortName": "Destek",
     "title": "Full Stack Web Developer",
