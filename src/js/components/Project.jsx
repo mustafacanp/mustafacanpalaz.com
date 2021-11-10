@@ -7,20 +7,16 @@ import {
   Tabs,
   TabBody,
   Fieldset,
-  reset,
   themes,
   Button,
   ListItem,
   Divider,
   List,
 } from "react95";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { scrollNext } from "./Bio.jsx";
-import styles from "../../css/Window.css";
+import { ThemeProvider } from "styled-components";
+import scrollNext from "./scrollNext";
 
-const ResetStyles = createGlobalStyle`
-  ${reset}
-`;
+import styles from "../../css/Window.css";
 
 class Project extends React.Component {
   state = {
@@ -42,7 +38,6 @@ class Project extends React.Component {
     const { activeTab } = this.state;
     return (
       <div>
-        <ResetStyles />
         <ThemeProvider theme={themes.water}>
           <Window className={styles.windowSpacing}>
             <WindowHeader className={styles.windowHeader}>

@@ -13,7 +13,8 @@ import {
   Button,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import { scrollNext } from "./Bio.jsx";
+import scrollNext from "./scrollNext";
+
 import styles from "../../css/Window.css";
 
 const fullStar = (
@@ -91,14 +92,14 @@ const getStars = (level) => {
   }
 };
 const Skill = () => (
-  <div stylename="styles.windowDivLayer">
+  <div className={styles.windowDivLayer}>
     <ThemeProvider theme={themes.water}>
-      <Window styleName="styles.windowSpacing">
-        <WindowHeader styleName="styles.windowHeader">
+      <Window className={styles.windowSpacing}>
+        <WindowHeader className={styles.windowHeader}>
           ⚔️ Skills.exe
         </WindowHeader>
-        <WindowContent styleName="styles.skills">
-          <Table styleName="tableCenter">
+        <WindowContent className={styles.skills}>
+          <Table className={styles.tableCenter}>
             <TableHead>
               <TableRow head>
                 <TableHeadCell>Name</TableHeadCell>
@@ -106,22 +107,20 @@ const Skill = () => (
               </TableRow>
             </TableHead>
             <TableBody>
-              {tech.map((item, i) => {
-                return (
-                  <TableRow key={i}>
-                    <TableDataCell styleName="processCell">
-                      {item.name}
-                    </TableDataCell>
-                    <TableDataCell styleName="processCell">
-                      {getStars(item.level)}
-                    </TableDataCell>
-                  </TableRow>
-                );
-              })}
+              {tech.map((item) => (
+                <TableRow key={item.name}>
+                  <TableDataCell className={styles.processCell}>
+                    {item.name}
+                  </TableDataCell>
+                  <TableDataCell className={styles.processCell}>
+                    {getStars(item.level)}
+                  </TableDataCell>
+                </TableRow>
+              ))}
             </TableBody>
           </Table>
         </WindowContent>
-        <div styleName="buttonGroup">
+        <div className={styles.buttonGroup}>
           <Button onClick={() => scrollNext("bio", -150)}>
             <span>Back ⇑</span>
           </Button>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ThemeProvider } from "styled-components";
 import {
   Button,
   AppBar,
@@ -10,7 +9,9 @@ import {
   Divider,
   Avatar,
 } from "react95";
-import { openLink, scrollNext } from "./Bio.jsx";
+import { ThemeProvider } from "styled-components";
+import scrollNext from "./scrollNext";
+
 import ProfileImage from "../../images/me.png";
 import styles from "../../css/HeadBar.css";
 

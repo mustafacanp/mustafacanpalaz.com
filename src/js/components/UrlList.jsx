@@ -9,7 +9,8 @@ import {
   Fieldset,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import { scrollNext, openLink } from "./Bio.jsx";
+import scrollNext from "./scrollNext";
+
 import styles from "../../css/Window.css";
 
 const items = [

@@ -6,24 +6,12 @@ import {
   WindowContent,
   WindowHeader,
   Fieldset,
-  reset,
   themes,
 } from "react95";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { scroller } from "react-scroll";
+import { ThemeProvider } from "styled-components";
+import scrollNext from "./scrollNext";
+
 import styles from "../../css/Window.css";
-
-const ResetStyles = createGlobalStyle`
-  ${reset}
-`;
-
-export const scrollNext = (elementName, offsetNum) => {
-  scroller.scrollTo(elementName, {
-    duration: 3000,
-    smooth: "easeInOutQuint",
-    offset: offsetNum ? offsetNum : null,
-  });
-};
 
 export const openLink = (url, name = "_blank") => {
   window.open(url, name);
@@ -31,7 +19,6 @@ export const openLink = (url, name = "_blank") => {
 
 const Bio = () => (
   <div className={styles.windowDivLayer}>
-    <ResetStyles />
     <ThemeProvider theme={themes.water}>
       <Window className={styles.windowSpacing}>
         <WindowHeader className={styles.windowHeader}>

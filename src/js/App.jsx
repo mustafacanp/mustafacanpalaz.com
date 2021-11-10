@@ -1,17 +1,24 @@
 import * as React from "react";
+import { reset } from "react95";
+import { createGlobalStyle } from "styled-components";
+import { Element } from "react-scroll";
 import Header from "./components/Header.jsx";
 import Bio from "./components/Bio.jsx";
 import Experience from "./components/Experience.jsx";
 import Project from "./components/Project.jsx";
 import UrlList from "./components/UrlList.jsx";
-import { Element } from "react-scroll";
 import Skill from "./components/Skill.jsx";
+
 import styles from "../css/App.css";
+
+const ResetStyles = createGlobalStyle`
+  ${reset}
+`;
 
 const App = () => (
   <div className={styles.mainDiv}>
+    <ResetStyles />
     <Header />
-
     <div className={styles.mainContainer}>
       <div className={styles.windowContainer}>
         <Element name="bio">
