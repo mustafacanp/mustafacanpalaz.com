@@ -36,25 +36,35 @@ class Experience extends React.Component {
             </WindowHeader>
             <WindowContent>
               <Tabs value={activeTab} onChange={this.handleChange}>
-                {experiences.map((exp, index) => (
-                  <Tab key={exp.shortName} value={index}>
-                    {activeTab === index ? exp.name : exp.shortName}
+                {experiences.map((experience, index) => (
+                  <Tab key={experience.shortName} value={index}>
+                    {activeTab === index
+                      ? experience.name
+                      : experience.shortName}
                   </Tab>
                 ))}
               </Tabs>
               <div>
                 {experiences.map(
-                  (exp, index) =>
+                  (experience, index) =>
                     activeTab === index && (
-                      <TabBody key={exp.name}>
-                        <Fieldset label={exp.title}>
-                          {exp.startDate} -– {exp.endDate}
+                      <TabBody key={experience.name}>
+                        <Fieldset label={experience.title}>
+                          {experience.startDate} -– {experience.endDate}
                           <ul className={styles.listText}>
-                            {exp.responsibilities.map((resp) => (
-                              <li key={resp} className={styles.itemText}>
-                                {resp}
-                              </li>
-                            ))}
+                            {experience.responsibilities.map(
+                              (responsibility) => (
+                                <li
+                                  key={responsibility}
+                                  className={styles.itemText}
+                                >
+                                  {responsibility}
+                                </li>
+                              )
+                            )}
+                            <li className={styles.itemText}>
+                              Technologies: {experience.techStack}
+                            </li>
                           </ul>
                           <br />
                         </Fieldset>
