@@ -40,11 +40,12 @@ const halfStar = (
   </svg>
 );
 const tech = [
-  { name: "JavaScript ES6", level: 9 },
-  { name: "Node.js", level: 8 },
+  { name: "JavaScript ES6", level: 10 },
+  { name: "React.js", level: 9 },
+  { name: "Node.js", level: 9 },
+  { name: "Web3", level: 8 },
+  { name: "Solidity", level: 8 },
   { name: "Vue.js", level: 8 },
-  { name: "React.js", level: 7 },
-  { name: "PHP Laravel", level: 8 },
 ];
 
 const getStars = (level) => {
@@ -96,7 +97,7 @@ const Skill = () => (
     <ThemeProvider theme={themes.water}>
       <Window className={styles.windowSpacing}>
         <WindowHeader className={styles.windowHeader}>
-          ⚔️ Skills.exe
+          <span style={{ fontWeight: 400 }}>⚔️ Skills.exe</span>
         </WindowHeader>
         <WindowContent className={styles.skills}>
           <Table className={styles.tableCenter}>

@@ -27,7 +27,8 @@ const items = [
     label: "🎨 Random Color",
   },
   {
-    value: "https://mustafacanpalaz.com/isItWetAPI/",
+    value:
+      "https://mustafacanpalaz.com/isItWetAPI/?coordinates=29.9773,31.1325",
     label: "💧 Is It Wet?",
   },
   {
@@ -40,12 +41,16 @@ const items = [
   },
 ];
 
+const openLink = (url, name = "_blank") => {
+  window.open(url, name);
+};
+
 const UrlList = () => (
   <div>
     <ThemeProvider theme={themes.water}>
       <Window className={styles.windowSpacing}>
         <WindowHeader className={styles.windowHeader}>
-          🔗 ProjectLinks.exe
+          <span style={{ fontWeight: 400 }}>🔗 ProjectLinks.exe</span>
         </WindowHeader>
 
         <WindowContent>

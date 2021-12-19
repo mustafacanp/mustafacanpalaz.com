@@ -13,16 +13,12 @@ import scrollNext from "./scrollNext";
 
 import styles from "../../css/Window.css";
 
-export const openLink = (url, name = "_blank") => {
-  window.open(url, name);
-};
-
 const Bio = () => (
   <div className={styles.windowDivLayer}>
     <ThemeProvider theme={themes.water}>
       <Window className={styles.windowSpacing}>
         <WindowHeader className={styles.windowHeader}>
-          😎 Hello.exe
+          <span style={{ fontWeight: 400 }}>😎 Hello.exe</span>
         </WindowHeader>
         <WindowContent>
           <Fieldset>

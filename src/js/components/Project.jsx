@@ -41,7 +41,7 @@ class Project extends React.Component {
         <ThemeProvider theme={themes.water}>
           <Window className={styles.windowSpacing}>
             <WindowHeader className={styles.windowHeader}>
-              🤩 Personal Projects.exe
+              <span style={{ fontWeight: 400 }}>🤩 PersonalProjects.exe</span>
             </WindowHeader>
             <WindowContent>
               <Tabs value={activeTab} onChange={this.handleChange}>
@@ -193,7 +193,7 @@ class Project extends React.Component {
                       >
                         <ListItem
                           as="a"
-                          href="https://mustafacanpalaz.com/isItWetAPI/"
+                          href="https://mustafacanpalaz.com/isItWetAPI/?coordinates=29.9773,31.1325"
                           target="_blank"
                         >
                           💧 Check it out!

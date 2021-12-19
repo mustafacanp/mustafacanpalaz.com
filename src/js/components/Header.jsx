@@ -15,6 +15,10 @@ import scrollNext from "./scrollNext";
 import ProfileImage from "../../images/me.png";
 import styles from "../../css/HeadBar.css";
 
+const openLink = (url, name = "_blank") => {
+  window.open(url, name);
+};
+
 function Menu() {
   const [open, setOpen] = React.useState(false);
 
@@ -93,7 +97,7 @@ const Header = () => (
             >
               <span className={styles.buttonText}>Contact</span>
             </Button>
-            <Button onClick={() => openLink("/cmd/", "_self")}>
+            <Button onClick={() => openLink("/cmd/", "_blank")}>
               <span
                 className={`${styles.buttonText} ${styles.commandLineButton}`}
               >
@@ -101,12 +105,7 @@ const Header = () => (
               </span>
             </Button>
           </div>
-          <Avatar
-            onClick={() => openLink("https://mustafacanpalaz.com/me.png")}
-            square
-            className={styles.headerAvatar}
-            src={ProfileImage}
-          />
+          <Avatar square className={styles.headerAvatar} src={ProfileImage} />
         </Toolbar>
       </AppBar>
     </ThemeProvider>

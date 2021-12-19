@@ -32,7 +32,7 @@ class Experience extends React.Component {
         <ThemeProvider theme={themes.water}>
           <Window className={styles.windowSpacing}>
             <WindowHeader className={styles.windowHeader}>
-              💻 Experience.exe
+              <span style={{ fontWeight: 400 }}>💻 Experience.exe</span>
             </WindowHeader>
             <WindowContent>
               <Tabs value={activeTab} onChange={this.handleChange}>
