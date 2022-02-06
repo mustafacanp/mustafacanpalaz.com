@@ -10,14 +10,14 @@ import App from "./App.jsx";
 
 import "../index.css";
 
-const defaultPath = "/";
+const BASE_PATH = "/";
 
 render(
   <Router>
     <Switch>
-      <Route exact path={defaultPath} component={App} />
-      <Route path={`${defaultPath}cmd`} />
-      <Redirect exact from="*" to={defaultPath} />
+      <Route exact path={BASE_PATH} component={App} />
+      <Route path={`${BASE_PATH}cmd`} />
+      <Redirect exact from="*" to={BASE_PATH} />
     </Switch>
   </Router>,
   document.getElementById("root")
