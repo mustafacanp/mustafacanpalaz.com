@@ -76,17 +76,17 @@ class Project extends React.Component {
                                   💻 Check it out!
                                 </ListItem>
                               )}
+                              {project.demoLink && project.githubLink && (
+                                <Divider />
+                              )}
                               {project.githubLink && (
-                                <>
-                                  <Divider />
-                                  <ListItem
-                                    as="a"
-                                    href={project.githubLink}
-                                    target="_blank"
-                                  >
-                                    📁 Github!
-                                  </ListItem>
-                                </>
+                                <ListItem
+                                  as="a"
+                                  href={project.githubLink}
+                                  target="_blank"
+                                >
+                                  📁 Github!
+                                </ListItem>
                               )}
                             </List>
                           )}
