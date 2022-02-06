@@ -119,5 +119,3 @@ flow-typed/
 flow-stubs/
 
 node_modules/
-
-yarn.lock
