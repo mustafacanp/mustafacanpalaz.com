@@ -1,7 +1,18 @@
 [
   {
     "id": 1,
-    "name": "ReactTerminal",
+    "name": "😸 Purry",
+    "items": [
+      "Blockchain Based Social Media Platform",
+      "Technology: React.JS, Solidity, Ethers.js",
+      "Touch devices friendly!"
+    ],
+    "demoLink": "https://purry.io",
+    "githubLink": "https://github.com/purryrepos"
+  },
+  {
+    "id": 2,
+    "name": "💻 ReactTerminal",
     "items": [
       "Linux Ubuntu style terminal with React.JS",
       "Technology: JavaScript, React.JS",
@@ -11,53 +22,21 @@
     "githubLink": "https://github.com/mustafacanp/ReactTerminal"
   },
   {
-    "id": 2,
-    "name": "TextGame",
+    "id": 3,
+    "name": "🎮👾 TextGame",
     "items": [
       "Text based role playing game.",
-      "Technology: JavaScript, Jquery (Working on rewrite with React.JS)",
+      "Technology: JavaScript, Jquery (Will rewrite with React.JS)",
       "Available only for desktop"
     ],
     "demoLink": "https://rpgtextgame.netlify.app",
     "githubLink": "https://github.com/mustafacanp/TextGame"
   },
   {
-    "id": 3,
-    "name": "RandomColor",
-    "items": [
-      "Turn off the lights and press space!",
-      "Technology: JavaScript, Jquery (Will rewrite with React.JS or Vue.JS)",
-      "Touch devices friendly!"
-    ],
-    "demoLink": "https://randomcolor2.netlify.app",
-    "githubLink": "https://github.com/mustafacanp/RandomColor"
-  },
-  {
     "id": 4,
-    "name": "IsItWet",
+    "name": "💵 The Dollar Rises",
     "items": [
-      "An API for determine if it's on the water according to a point's coordinates.",
-      "Technology: PHP(Curl), Google MapsAPI",
-      "Touch devices friendly!"
-    ],
-    "demoLink": "https://mustafacanpalaz.com/isItWetAPI/?coordinates=29.9773,31.1325",
-    "githubLink": "https://github.com/mustafacanp/isItWet"
-  },
-  {
-    "id": 5,
-    "name": "SpoilerAl",
-    "items": [
-      "IMSDB (Internet Movie Spoiler Database)",
-      "Technology: PHP(Laravel), JavaScript(Jquery)",
-      "Touch devices friendly!"
-    ],
-    "demoLink": "https://www.spoileral.com"
-  },
-  {
-    "id": 6,
-    "name": "TheDollarRises",
-    "items": [
-      "Browser Game with pixi.js",
+      "Browser Game with pixi.js (warning: includes dictator)",
       "Technology: JavaScript, pixi.js",
       "Available only for desktop"
     ],

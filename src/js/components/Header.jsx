@@ -48,7 +48,7 @@ function Menu() {
           <ListItem onClick={() => scrollNext("experience", -150)}>
             💼 Experience
           </ListItem>
-          <ListItem onClick={() => scrollNext("project", -150)}>
+          <ListItem onClick={() => scrollNext("projects", -150)}>
             ⌨️ Projects
           </ListItem>
           <Divider />
@@ -87,7 +87,7 @@ const Header = () => (
             <Button onClick={() => scrollNext("experience", -150)}>
               <span className={styles.buttonText}>Experience</span>
             </Button>
-            <Button onClick={() => scrollNext("project", -150)}>
+            <Button onClick={() => scrollNext("projects", -150)}>
               <span className={styles.buttonText}>Projects</span>
             </Button>
             <Button

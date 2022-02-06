@@ -5,8 +5,8 @@ import { Element } from "react-scroll";
 import Header from "./components/Header.jsx";
 import Bio from "./components/Bio.jsx";
 import Experience from "./components/Experience.jsx";
-import Project from "./components/Project.jsx";
-import UrlList from "./components/UrlList.jsx";
+import Projects from "./components/Projects.jsx";
+import ProjectLinks from "./components/ProjectLinks.jsx";
 import Skill from "./components/Skill.jsx";
 
 import styles from "../css/App.css";
@@ -39,14 +39,14 @@ const App = () => (
       </div>
 
       <div className={styles.windowContainer}>
-        <Element name="project" className={styles.w750}>
-          <Project />
+        <Element name="projects" className={styles.w750}>
+          <Projects />
         </Element>
       </div>
 
       <div className={styles.windowContainer}>
         <Element name="projectUrls">
-          <UrlList />
+          <ProjectLinks />
         </Element>
       </div>
     </div>

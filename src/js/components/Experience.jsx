@@ -77,7 +77,7 @@ class Experience extends React.Component {
               <Button onClick={() => scrollNext("skills", -150)}>
                 <span>Back ⇑</span>
               </Button>
-              <Button onClick={() => scrollNext("project", -150)}>
+              <Button onClick={() => scrollNext("projects", -150)}>
                 <span>Next ⇓</span>
               </Button>
             </div>
