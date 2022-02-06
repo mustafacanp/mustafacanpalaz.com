@@ -15,6 +15,7 @@ import {
 import { ThemeProvider } from "styled-components";
 import scrollNext from "../utils/scrollNext";
 
+import skills from "../../data/skills.json";
 import styles from "../../css/Window.css";
 
 const fullStar = (
@@ -39,14 +40,6 @@ const halfStar = (
     <path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z" />
   </svg>
 );
-const tech = [
-  { name: "JavaScript ES6", level: 10 },
-  { name: "Web3", level: 8 },
-  { name: "Solidity", level: 8 },
-  { name: "React.js", level: 9 },
-  { name: "Node.js", level: 9 },
-  { name: "Vue.js", level: 8 },
-];
 
 const getStars = (level) => {
   switch (level) {
@@ -92,6 +85,7 @@ const getStars = (level) => {
       );
   }
 };
+
 const Skill = () => (
   <div className={styles.windowDivLayer}>
     <ThemeProvider theme={themes.water}>
@@ -108,7 +102,7 @@ const Skill = () => (
               </TableRow>
             </TableHead>
             <TableBody>
-              {tech.map((item) => (
+              {skills.map((item) => (
                 <TableRow key={item.name}>
                   <TableDataCell className={styles.processCell}>
                     {item.name}
