@@ -9,7 +9,7 @@ import {
   Fieldset,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import scrollNext from "./scrollNext";
+import scrollNext from "../utils/scrollNext";
 
 import projects from "../../data/other-projects.json";
 import styles from "../../css/Window.css";
@@ -44,7 +44,7 @@ const ProjectLinks = () => (
         </Fieldset>
       </WindowContent>
       <div className={styles.buttonGroup}>
-        <Button onClick={() => scrollNext("project", -150)}>
+        <Button onClick={() => scrollNext("projects", -150)}>
           <span>Back ⇑</span>
         </Button>
         <Button onClick={() => scrollNext("bio", -150)}>

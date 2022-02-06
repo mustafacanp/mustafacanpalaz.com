@@ -11,7 +11,7 @@ import {
   Button,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import scrollNext from "./scrollNext";
+import scrollNext from "../utils/scrollNext";
 
 import experiences from "../../data/experience.json";
 import styles from "../../css/Window.css";

@@ -10,7 +10,7 @@ import {
   Avatar,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import scrollNext from "./scrollNext";
+import scrollNext from "../utils/scrollNext";
 
 import ProfileImage from "../../images/me.png";
 import styles from "../../css/HeadBar.css";

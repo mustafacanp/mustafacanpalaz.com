@@ -9,7 +9,7 @@ import {
   themes,
 } from "react95";
 import { ThemeProvider } from "styled-components";
-import scrollNext from "./scrollNext";
+import scrollNext from "../utils/scrollNext";
 
 import styles from "../../css/Window.css";
 
