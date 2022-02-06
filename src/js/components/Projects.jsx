@@ -39,46 +39,57 @@ class Project extends React.Component {
             <WindowContent>
               <Tabs value={activeTab} onChange={this.handleChange}>
                 {projects.map((project, i) => (
-                  <Tab value={i + 1}>{project.name}</Tab>
+                  <Tab key={`tab-${project.name}`} value={i + 1}>
+                    {project.name}
+                  </Tab>
                 ))}
               </Tabs>
               <div>
                 {projects.map((project) => {
                   if (activeTab === project.id)
                     return (
-                      <TabBody>
+                      <TabBody key={project.name}>
                         <Fieldset>
                           <ul className={styles.listText}>
                             {project.items.map((item) => (
-                              <li className={styles.itemText}>{item}</li>
+                              <li
+                                key={`section-${item}`}
+                                className={styles.itemText}
+                              >
+                                {item}
+                              </li>
                             ))}
                           </ul>
-                          <List
-                            inline={true}
-                            horizontalAlign="left"
-                            verticalAlign="bottom"
-                            open={true}
-                          >
-                            <ListItem
-                              as="a"
-                              href={project.demoLink}
-                              target="_blank"
+                          {(project.demoLink || project.githubLink) && (
+                            <List
+                              inline={true}
+                              horizontalAlign="left"
+                              verticalAlign="bottom"
+                              open={true}
                             >
-                              💻 Check it out!
-                            </ListItem>
-                            {project.githubLink && (
-                              <>
-                                <Divider />
+                              {project.demoLink && (
                                 <ListItem
                                   as="a"
-                                  href={project.githubLink}
+                                  href={project.demoLink}
                                   target="_blank"
                                 >
-                                  📁 Github!
+                                  💻 Check it out!
                                 </ListItem>
-                              </>
-                            )}
-                          </List>
+                              )}
+                              {project.githubLink && (
+                                <>
+                                  <Divider />
+                                  <ListItem
+                                    as="a"
+                                    href={project.githubLink}
+                                    target="_blank"
+                                  >
+                                    📁 Github!
+                                  </ListItem>
+                                </>
+                              )}
+                            </List>
+                          )}
                         </Fieldset>
                       </TabBody>
                     );

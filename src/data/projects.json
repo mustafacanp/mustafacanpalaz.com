@@ -4,14 +4,33 @@
     "name": "😸 Purry",
     "items": [
       "Blockchain Based Social Media Platform",
-      "Technology: React.JS, Solidity, Ethers.js",
-      "Touch devices friendly!"
+      "Technology: React.JS, Solidity, Ethers.js, The Graph",
+      "Responsibilities: Design solidity contracts, design and write frontend, implement frontend functionality with ethers.js"
     ],
     "demoLink": "https://purry.io",
     "githubLink": "https://github.com/purryrepos"
   },
   {
     "id": 2,
+    "name": "⏳ DAO Project, Ongoing",
+    "items": [
+      "Sirius DAO - Olympus DAO Fork",
+      "Technology: Solidity, Web3, DeFi",
+      "Responsibilities: Modify, deploy the contracts and, implement frontend functionality with ethers.js"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "⏳ NFT Project, Ongoing",
+    "items": [
+      "Amillion Notebooks NFT Project, owner can sell physical notebook of the owned NFTs",
+      "Technology: Solidity, Web3, NodeJS (to watch blockchain events)",
+      "Responsibilities: Design and write solidity contracts, frontend and backend, connect contracts to the frontend with the Web3 functionality"
+    ],
+    "githubLink": "https://github.com/AmillionNotebooks"
+  },
+  {
+    "id": 4,
     "name": "💻 ReactTerminal",
     "items": [
       "Linux Ubuntu style terminal with React.JS",
@@ -22,19 +41,8 @@
     "githubLink": "https://github.com/mustafacanp/ReactTerminal"
   },
   {
-    "id": 3,
-    "name": "🎮👾 TextGame",
-    "items": [
-      "Text based role playing game.",
-      "Technology: JavaScript, Jquery (Will rewrite with React.JS)",
-      "Available only for desktop"
-    ],
-    "demoLink": "https://rpgtextgame.netlify.app",
-    "githubLink": "https://github.com/mustafacanp/TextGame"
-  },
-  {
-    "id": 4,
-    "name": "💵 The Dollar Rises",
+    "id": 5,
+    "name": "💵 TheDollarRises",
     "items": [
       "Browser Game with pixi.js (warning: includes dictator)",
       "Technology: JavaScript, pixi.js",
