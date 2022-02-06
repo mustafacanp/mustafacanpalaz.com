@@ -15,15 +15,35 @@ import styles from "../../css/Window.css";
 
 const items = [
   {
+    value: "https://purry.io",
+    label: "😸 Purry - Blockchain Based Social Media Platform",
+  },
+  {
+    value: "https://opensea.io/collection/archis-academy-events-nft",
+    label: "📜 Certification with NFT",
+  },
+  {
     value: "https://mustafacanpalaz.com/cmd",
     label: "💻 React Terminal",
   },
   {
-    value: "https://textgamerpg.com",
+    value: "https://app.risksoft.com.tr/login",
+    label: "👷‍♂️ Risksoft Safety Management Software",
+  },
+  {
+    value: "https://secilenler.com.tr/panel/login",
+    label: "👩‍🏫 E-Learning System",
+  },
+  {
+    value: "https://thedollarrises.netlify.app",
+    label: "💵 The Dollar Rises",
+  },
+  {
+    value: "https://rpgtextgame.netlify.app",
     label: "🎮👾 Text Game",
   },
   {
-    value: "https://mustafacanpalaz.com/randomColor",
+    value: "https://randomcolor2.netlify.app",
     label: "🎨 Random Color",
   },
   {
@@ -34,10 +54,6 @@ const items = [
   {
     value: "https://www.spoileral.com",
     label: "🎬 Spoiler Al",
-  },
-  {
-    value: "https://mustafacanpalaz.com/theDollarRises",
-    label: "💵 The Dollar Rises",
   },
 ];
 

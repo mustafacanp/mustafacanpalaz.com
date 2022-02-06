@@ -41,10 +41,10 @@ const halfStar = (
 );
 const tech = [
   { name: "JavaScript ES6", level: 10 },
-  { name: "React.js", level: 9 },
-  { name: "Node.js", level: 9 },
   { name: "Web3", level: 8 },
   { name: "Solidity", level: 8 },
+  { name: "React.js", level: 9 },
+  { name: "Node.js", level: 9 },
   { name: "Vue.js", level: 8 },
 ];
 
