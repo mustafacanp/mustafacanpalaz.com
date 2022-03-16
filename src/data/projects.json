@@ -12,15 +12,6 @@
   },
   {
     "id": 2,
-    "name": "⏳ DAO Project, Ongoing",
-    "items": [
-      "Sirius DAO - Olympus DAO Fork",
-      "Technology: Solidity, Web3, DeFi",
-      "Responsibilities: Modify, deploy the contracts and, implement frontend functionality with ethers.js"
-    ]
-  },
-  {
-    "id": 3,
     "name": "⏳ NFT Project, Ongoing",
     "items": [
       "Amillion Notebooks NFT Project, owner can sell physical notebook of the owned NFTs",
@@ -30,7 +21,7 @@
     "githubLink": "https://github.com/AmillionNotebooks"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "💻 ReactTerminal",
     "items": [
       "Linux Ubuntu style terminal with React.JS",
@@ -41,7 +32,7 @@
     "githubLink": "https://github.com/mustafacanp/ReactTerminal"
   },
   {
-    "id": 5,
+    "id": 4,
     "name": "💵 TheDollarRises",
     "items": [
       "Browser Game with pixi.js (warning: includes dictator)",
