@@ -41,13 +41,10 @@ const Bio = () => (
                 checked={true}
                 onChange={() => null}
                 value="OGU"
-                label="TR Eskişehir Osmangazi University"
+                label="Bachelor of Science in Math & Computer Science"
                 name="school"
               />
               <div className={styles.textProcess}>
-                <div className={styles.eduTextLong}>
-                  Bachelor of Science in Math & Computer Science
-                </div>
                 <div className={styles.eduTextLong}>Sep, 2011 -- Jun, 2016</div>
               </div>
               <br />
