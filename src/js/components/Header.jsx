@@ -83,13 +83,6 @@ const Header = () => (
             <Button onClick={() => openLink("https://github.com/mustafacanp")}>
               <span className={styles.buttonText}>Github</span>
             </Button>
-            <Button
-              onClick={() =>
-                openLink("https://mustafacanpalaz.com/resume/2022.pdf")
-              }
-            >
-              <span className={styles.buttonText}>Resume</span>
-            </Button>
             <Button onClick={() => scrollNext("experience", -150)}>
               <span className={styles.buttonText}>Experience</span>
             </Button>
