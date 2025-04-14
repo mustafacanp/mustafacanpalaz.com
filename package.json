@@ -1,41 +1,37 @@
 {
-  "name": "mustafacanpalaz-personal-website",
-  "version": "2.0.0",
-  "description": "mustafacanpalaz-personal-website",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "dev": "webpack --mode development --output ./devDist/main.js",
-    "build": "webpack --mode production"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.0.0",
-    "file-loader": "^6.2.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.7.0",
-    "react-svg-loader": "^3.0.0",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.4.0"
-  },
-  "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "babel-plugin-react-css-modules": "^5.2.6",
-    "lodash": "^4.17.21",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.1.1",
-    "react-scroll": "^1.7.14",
-    "react95": "^2.0.0",
-    "styled-components": "^4.4.0"
-  }
+	"name": "mustafacanpalaz-personal-website",
+	"version": "3.0.0",
+	"description": "mustafacanpalaz-personal-website",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-dev-server --open --mode development",
+		"dev": "webpack --mode development --output ./devDist/main.js",
+		"build": "webpack --mode production"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.26.10",
+		"@babel/preset-env": "^7.26.9",
+		"@babel/preset-flow": "^7.0.0",
+		"@babel/preset-react": "^7.26.3",
+		"babel-loader": "^8.0.6",
+		"css-loader": "6.8.1",
+		"html-loader": "^0.5.5",
+		"html-webpack-plugin": "^5.6.3",
+		"mini-css-extract-plugin": "2.7.6",
+		"react-svg-loader": "^3.0.0",
+		"webpack": "^5.99.5",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.1"
+	},
+	"dependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"babel-plugin-react-css-modules": "^5.2.6",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react95": "^4.0.0",
+		"styled-components": "^5.0.0"
+	}
 }

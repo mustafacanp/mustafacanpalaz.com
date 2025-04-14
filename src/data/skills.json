@@ -1,9 +1,109 @@
 [
-  { "name": "JavaScript ES6", "level": 10 },
-  { "name": "DApp Development", "level": 8 },
-  { "name": "Solidity", "level": 8 },
-  { "name": "Web3", "level": 8 },
-  { "name": "React.js", "level": 9 },
-  { "name": "Node.js", "level": 9 },
-  { "name": "Vue.js", "level": 8 }
+	{
+		"id": "frontend",
+		"label": "Frontend",
+		"icon": "🎨",
+		"items": [
+			{
+				"id": "reactjs",
+				"label": "React.js"
+			},
+			{
+				"id": "typescript",
+				"label": "TypeScript"
+			},
+			{
+				"id": "vuejs",
+				"label": "Vue.js"
+			},
+			{
+				"id": "htmlcss",
+				"label": "HTML & CSS"
+			},
+			{
+				"id": "webpack",
+				"label": "Webpack"
+			}
+		]
+	},
+	{
+		"id": "backend",
+		"label": "Backend",
+		"icon": "⚙️",
+		"items": [
+			{
+				"id": "java",
+				"label": "Java (Spring Boot)"
+			},
+			{
+				"id": "nodejs",
+				"label": "Node.js (Express)"
+			},
+			{
+				"id": "php",
+				"label": "PHP (Laravel)"
+			},
+			{
+				"id": "rest",
+				"label": "REST APIs"
+			}
+		]
+	},
+	{
+		"id": "db-devops",
+		"label": "Databases & DevOps",
+		"icon": "🗄️",
+		"items": [
+			{
+				"id": "sql",
+				"label": "SQL"
+			},
+			{
+				"id": "redis",
+				"label": "Redis"
+			},
+			{
+				"id": "docker",
+				"label": "Docker"
+			},
+			{
+				"id": "nginx",
+				"label": "Nginx"
+			}
+		]
+	},
+	{
+		"id": "ai",
+		"label": "AI",
+		"icon": "🤖",
+		"items": [
+			{
+				"id": "llms",
+				"label": "LLMs"
+			},
+			{
+				"id": "ai-other",
+				"label": "Prompt design & chaining, RAG, LangChain, Local training (LoRA, fine-tuning)"
+			}
+		]
+	},
+	{
+		"id": "blockchain",
+		"label": "Blockchain",
+		"icon": "🔗",
+		"items": [
+			{
+				"id": "solidity",
+				"label": "Solidity"
+			},
+			{
+				"id": "web3js",
+				"label": "Web3.js"
+			},
+			{
+				"id": "dapps",
+				"label": "dApps (NFT, DAO, ...)"
+			}
+		]
+	}
 ]
