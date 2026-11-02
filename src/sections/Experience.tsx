@@ -42,7 +42,7 @@ const Bullets = ({ items }: { items: string[] }) => (
 
 export const Experience = () => (
   <Reveal className="section">
-    <Heading id="experience" icon="💻">
+    <Heading id="experience" index="03">
       Experience.exe
     </Heading>
     <div className="jobs">

@@ -5,7 +5,7 @@ import { Reveal } from '../components/Reveal';
 
 export const About = () => (
   <Reveal className="section">
-    <Heading id="about" icon="😎">
+    <Heading id="about" index="01">
       Hello.exe
     </Heading>
     <div className="about">
@@ -20,10 +20,8 @@ export const About = () => (
         <ul className="list-plain">
           {about.education.map((item) => (
             <li key={item.label} className="edu">
-              <span className="edu__icon" aria-hidden="true">
-                {item.icon}
-              </span>
               <span>
+                <span className="edu__type">{item.type}</span>
                 <span className="edu__label">{item.label}</span>
                 <span className="edu__date">{item.date}</span>
               </span>

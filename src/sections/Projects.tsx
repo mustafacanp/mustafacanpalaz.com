@@ -13,15 +13,14 @@ export const Projects = () => {
   return (
     <>
       <Reveal className="section">
-        <Heading id="projects" icon="🤩">
+        <Heading id="projects" index="04">
           Projects.exe
         </Heading>
         <ul className="grid grid--projects list-plain">
           {projects.map((project) => (
             <Panel as="li" key={project.name} className="project">
-              <h3 className="project__name">
-                <span aria-hidden="true">{project.icon}</span> {project.name}
-              </h3>
+              <p className="project__category">{project.category}</p>
+              <h3 className="project__name">{project.name}</h3>
               <p className="project__tagline">{project.tagline}</p>
               <p className="project__description">{project.description}</p>
               <ul className="chips list-plain">
@@ -50,24 +49,39 @@ export const Projects = () => {
       </Reveal>
 
       <Reveal className="section">
-        <Heading id="links" icon="🔗">
+        <Heading id="links" index="05">
           ProjectLinks.exe
         </Heading>
         <Animator combine manager="stagger" duration={{ stagger: 0.04 }}>
           <ul className="links list-plain">
-            {projectLinks.map((link) => (
-              <Animator key={link.name}>
-                <Animated as="li" animated={['fade', ['x', -10, 0]]}>
-                  <a className="link-row" href={link.url} {...linkProps(link.url)} onClick={() => play('click')}>
-                    <span aria-hidden="true">{link.icon}</span>
-                    <span className="link-row__name">{link.name}</span>
-                    <span className="link-row__arrow" aria-hidden="true">
-                      {'->'}
+            {projectLinks.map((link) => {
+              const text = (
+                <span className="link-row__text">
+                  <span className="link-row__name">{link.name}</span>
+                  {link.description?.map((line) => (
+                    <span key={line} className="link-row__description">
+                      {line}
                     </span>
-                  </a>
-                </Animated>
-              </Animator>
-            ))}
+                  ))}
+                </span>
+              );
+              return (
+                <Animator key={link.name}>
+                  <Animated as="li" animated={['fade', ['x', -10, 0]]}>
+                    {link.url ? (
+                      <a className="link-row" href={link.url} {...linkProps(link.url)} onClick={() => play('click')}>
+                        {text}
+                        <span className="link-row__arrow" aria-hidden="true">
+                          {'->'}
+                        </span>
+                      </a>
+                    ) : (
+                      <div className="link-row">{text}</div>
+                    )}
+                  </Animated>
+                </Animator>
+              );
+            })}
           </ul>
         </Animator>
       </Reveal>

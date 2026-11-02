@@ -7,7 +7,7 @@ import { Reveal } from '../components/Reveal';
 
 export const Contact = () => (
   <Reveal className="section">
-    <Heading id="contact" icon="📡">
+    <Heading id="contact" index="06">
       Contact.exe
     </Heading>
     <Panel frame="kranox" className="contact">
