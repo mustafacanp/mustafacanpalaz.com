@@ -31,6 +31,12 @@ export const Hero = () => (
           <Button href={`mailto:${profile.email}`} variant="primary">
             Contact me
           </Button>
+          <Button href={profile.resume} external>
+            Resume
+          </Button>
+          <Button href={profile.linkedin} external>
+            LinkedIn
+          </Button>
           <Button href={profile.github} external>
             GitHub
           </Button>

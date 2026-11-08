@@ -6,6 +6,9 @@ export const profile = {
   title: "Full Stack Software Engineer",
   email: "mustafacanpalaz@gmail.com",
   github: "https://github.com/mustafacanp",
+  linkedin: "https://www.linkedin.com/in/mustafa-can-palaz/",
+  // Lives only on the server (html/resume.pdf), not in this repo.
+  resume: "https://mustafacanpalaz.com/resume.pdf",
   cmd: "https://terminal.mustafacanpalaz.com",
   // Previous version of this site, built with React95.
   retro: "https://retro.mustafacanpalaz.com",
@@ -102,7 +105,7 @@ export const otherJobs: Job[] = [
   },
   {
     company: "Bulutsoft Software",
-    role: "Frontend Heavy Full Stack Web Developer",
+    role: "Web Developer",
     date: "Jan 2016 - Dec 2017",
     bullets: [
       "Worked across HTML, CSS and the full software development life cycle.",
@@ -160,6 +163,16 @@ export const projects: Project[] = [
     live: "https://tdr.mustafacanpalaz.com",
     repo: "https://github.com/mustafacanp/the-dollar-rises",
     note: "Desktop only",
+  },
+  {
+    category: "Browser extension",
+    name: "Udemy Course Creation Date",
+    tagline: "Chrome extension published on the Chrome Web Store",
+    description:
+      "Shows when a Udemy course was created, right under the course title and in the extension popup, so you can tell how current a course is before buying it.",
+    tech: ["JavaScript", "Chrome Extensions", "HTML", "CSS"],
+    live: "https://chromewebstore.google.com/detail/udemy-course-creation-dat/jpaieemjaccofadjbpbhijhbdhkcgiel",
+    repo: "https://github.com/mustafacanp/udemy-course-creation-date-extension",
   },
 ];
 

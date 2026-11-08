@@ -12,12 +12,16 @@ export const Contact = () => (
     </Heading>
     <Panel frame="kranox" className="contact">
       <p className="contact__text">Open a channel. The fastest way to reach me is email.</p>
-      <a className="contact__email" href={`mailto:${profile.email}`}>
-        {profile.email}
-      </a>
+      <span className="contact__email">{profile.email}</span>
       <div className="hero__actions">
         <Button href={`mailto:${profile.email}`} variant="primary">
           Send email
+        </Button>
+        <Button href={profile.resume} external>
+          Resume
+        </Button>
+        <Button href={profile.linkedin} external>
+          LinkedIn
         </Button>
         <Button href={profile.github} external>
           GitHub
