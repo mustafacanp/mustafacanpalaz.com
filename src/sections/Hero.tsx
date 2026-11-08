@@ -34,7 +34,9 @@ export const Hero = () => (
           <Button href={profile.github} external>
             GitHub
           </Button>
-          <Button href={profile.cmd}>{'>_ Command Line'}</Button>
+          <Button href={profile.cmd} external>
+            {'>_ Command Line'}
+          </Button>
         </div>
       </Animator>
     </section>

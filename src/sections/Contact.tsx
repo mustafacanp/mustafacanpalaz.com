@@ -1,9 +1,9 @@
-import { Animated, Animator } from '@arwes/react';
-import { profile } from '../content';
-import { Button } from '../components/Button';
-import { Heading } from '../components/Heading';
-import { Panel } from '../components/Panel';
-import { Reveal } from '../components/Reveal';
+import { Animated, Animator } from "@arwes/react";
+import { profile } from "../content";
+import { Button } from "../components/Button";
+import { Heading } from "../components/Heading";
+import { Panel } from "../components/Panel";
+import { Reveal } from "../components/Reveal";
 
 export const Contact = () => (
   <Reveal className="section">
@@ -25,14 +25,13 @@ export const Contact = () => (
       </div>
     </Panel>
     <Animator>
-      <Animated as="footer" className="footer" animated={['fade']}>
+      <Animated as="footer" className="footer" animated={["fade"]}>
         <span>
-          {'©'} {new Date().getFullYear()} {profile.name}
+          {"©"} {new Date().getFullYear()} {profile.name}
         </span>
         <span>
-          Built with{' '}
-          <a href="https://arwes.dev" target="_blank" rel="noopener noreferrer">
-            Arwes
+          <a href={profile.retro} target="_blank" rel="noopener noreferrer">
+            Retro version (React95)
           </a>
         </span>
       </Animated>

@@ -31,24 +31,6 @@ const render = (seconds, fn) => Array.from({ length: Math.floor(seconds * RATE) 
 // Short square-ish blip.
 const click = render(0.05, (t) => Math.sign(Math.sin(2 * Math.PI * 1900 * t)) * 0.18 * Math.exp(-t * 90));
 
-// Burst of tiny ticks, played while headings decipher.
-const ticks = [0, 0.045, 0.085, 0.14, 0.175, 0.23, 0.27, 0.32];
-const type = render(0.36, (t) =>
-  ticks.reduce((sum, start, k) => {
-    const d = t - start;
-    if (d < 0 || d > 0.012) return sum;
-    return sum + Math.sin(2 * Math.PI * (2400 + k * 140) * d) * 0.12 * Math.exp(-d * 400);
-  }, 0)
-);
-
-// Soft rising sweep for page intro and sound-on.
-const intro = render(0.7, (t) => {
-  const f = 280 + 900 * (t / 0.7) ** 2;
-  return Math.sin(2 * Math.PI * f * t) * 0.16 * Math.min(1, t * 30) * Math.exp(-t * 4);
-});
-
 mkdirSync(outDir, { recursive: true });
 writeFileSync(outDir + 'click.wav', wav(click));
-writeFileSync(outDir + 'type.wav', wav(type));
-writeFileSync(outDir + 'intro.wav', wav(intro));
 console.log('sounds written to', outDir);

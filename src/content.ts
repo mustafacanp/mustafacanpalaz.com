@@ -6,7 +6,9 @@ export const profile = {
   title: "Full Stack Software Engineer",
   email: "mustafacanpalaz@gmail.com",
   github: "https://github.com/mustafacanp",
-  cmd: "/cmd/",
+  cmd: "https://terminal.mustafacanpalaz.com",
+  // Previous version of this site, built with React95.
+  retro: "https://retro.mustafacanpalaz.com",
 };
 
 export const about = {
@@ -29,7 +31,15 @@ export const skills = [
   },
   {
     name: "Backend",
-    items: ["Java (Spring, Hibernate)", "Node.js (Express)", "PHP (Laravel)", "Wolfram Language", "REST APIs", "OAuth & auth flows"],
+    items: [
+      "Java (Spring, Hibernate)",
+      "Node.js (Express)",
+      "Python (Flask)",
+      "PHP (Laravel)",
+      "Wolfram Language",
+      "REST APIs",
+      "OAuth & auth flows",
+    ],
   },
   {
     name: "Databases & DevOps",
@@ -37,7 +47,13 @@ export const skills = [
   },
   {
     name: "AI",
-    items: ["LLMs", "Prompt design & chaining", "RAG, LangChain", "Local training (LoRA, fine-tuning)", "AI-assisted development"],
+    items: [
+      "LLM apps (Vercel AI SDK, OpenAI, Mistral, xAI)",
+      "Streaming chat & context management",
+      "Prompt engineering",
+      "Voice cloning & TTS (Coqui, PyTorch)",
+      "Local models",
+    ],
   },
   {
     name: "Blockchain",
@@ -132,7 +148,7 @@ export const projects: Project[] = [
     tagline: "Ubuntu style terminal in the browser",
     description: "A Linux terminal look-alike built with React. Touch-device friendly.",
     tech: ["JavaScript", "React"],
-    live: "/cmd/",
+    live: "https://terminal.mustafacanpalaz.com",
     repo: "https://github.com/mustafacanp/ReactTerminal",
   },
   {
@@ -141,7 +157,7 @@ export const projects: Project[] = [
     tagline: "Browser game with pixi.js",
     description: "A small browser game (warning: includes a dictator).",
     tech: ["JavaScript", "pixi.js"],
-    live: "/tdr/",
+    live: "https://tdr.mustafacanpalaz.com",
     repo: "https://github.com/mustafacanp/the-dollar-rises",
     note: "Desktop only",
   },

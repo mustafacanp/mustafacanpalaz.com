@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Animated, Animator, FrameLines, Text } from '@arwes/react';
 import { profile } from '../content';
-import { usePlay, useSound } from './Sound';
+import { usePlay } from './Sound';
 
 const links = [
   { href: '#about', label: 'About' },
@@ -13,7 +13,6 @@ const links = [
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
-  const { enabled, toggle } = useSound();
   const play = usePlay();
 
   useEffect(() => {
@@ -65,20 +64,29 @@ export const Nav = () => {
               </Animator>
             ))}
             <Animator>
-              <Animated as="a" href={profile.cmd} onClick={onLink} className="nav__cmd" animated={['fade', ['y', -6, 0]]}>
+              <Animated
+                as="a"
+                href={profile.cmd}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onLink}
+                className="nav__cmd"
+                animated={['fade', ['y', -6, 0]]}
+              >
                 {'>_ Command Line'}
               </Animated>
             </Animator>
             <Animator>
               <Animated
-                as="button"
-                type="button"
-                className="nav__sound"
-                aria-pressed={enabled}
-                onClick={toggle}
+                as="a"
+                href={profile.retro}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={onLink}
+                className="nav__cmd"
                 animated={['fade', ['y', -6, 0]]}
               >
-                {enabled ? 'Sound: on' : 'Sound: off'}
+                {'[ Win95 ]'}
               </Animated>
             </Animator>
           </nav>

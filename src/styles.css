@@ -154,7 +154,6 @@ p {
   letter-spacing: 0;
 }
 
-.nav__sound,
 .nav__menu {
   padding: 4px 10px;
   background: transparent;
@@ -165,15 +164,9 @@ p {
   cursor: pointer;
 }
 
-.nav__sound:hover,
 .nav__menu:hover {
   border-color: var(--primary);
   color: var(--heading);
-}
-
-.nav__sound[aria-pressed='true'] {
-  border-color: var(--primary);
-  color: var(--accent);
 }
 
 .nav__menu {
@@ -205,11 +198,6 @@ p {
 
   .nav__links > * {
     padding: 12px 20px;
-  }
-
-  .nav__links .nav__sound {
-    margin: 8px 20px;
-    padding: 8px 10px;
   }
 }
 
